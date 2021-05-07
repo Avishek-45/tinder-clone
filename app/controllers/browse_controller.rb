@@ -1,7 +1,7 @@
 class BrowseController < ApplicationController
 
     def browse
-        @users =Account.all
+        @users =Account.where.not(id: current_account.id)
     end
 
     def approve

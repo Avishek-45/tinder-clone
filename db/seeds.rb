@@ -8,8 +8,6 @@
 
 
    Account.create([
-       { first_name: 'Sarh', last_name: 'Dahal' ,   username: 'sarah' ,email: 'sarah@gmail.com' ,password: 'password '}, 
-       { first_name: 'Laxmi', last_name: 'Tysen' ,   username: 'laxmi' ,email: 'laxmi@gmail.com' ,password: ' password'}, 
        { first_name: 'Rahul', last_name: 'william' ,   username: 'rahul' ,email: 'rahul@gmail.com', password: ' password'}, 
        { first_name: 'Sita', last_name: 'jhonson' ,   username: 'sita' ,email: 'sita@gmail.com' ,password: ' password'}, 
        { first_name: 'Hari', last_name: 'watson' ,   username: 'hari' ,email: 'hari@gmail.com' ,password: 'password '}, 
