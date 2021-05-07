@@ -5,6 +5,7 @@ class BrowseController < ApplicationController
     end
 
     def approve
+        
         #user swipes right
     end
 
