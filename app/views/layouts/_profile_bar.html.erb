@@ -1,0 +1,7 @@
+<div class="bg-danger profile-bar">
+        <%= link_to "Sign Out", destroy_account_session_path , method: :delete, class: "float-right text-white mt-2" %>
+        <% if current_account.images.attached? %>
+        <%= image_tag current_account.images.first, width: "50px", height: "50px", class: "profile-thumb rounded-circle mr-2" %>
+        <% end %>
+        <%= link_to "My Profile", edit_account_registration_path, class: "my-profile text-white" %>
+</div>

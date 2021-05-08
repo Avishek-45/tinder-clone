@@ -11,14 +11,13 @@
   </head>
 
   <body>
-    <%= render 'layouts/nav' %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <%= render 'layouts/nav'  unless account_signed_in? %>
 
-      <div class="container">
+
+      <div class="container-fluid p-0 bg-light">
         <%= yield %>
       </div>
 
-    <%= render 'layouts/footer' %>
+    <%= render 'layouts/footer' unless account_signed_in? %>
   </body>
 </html>
