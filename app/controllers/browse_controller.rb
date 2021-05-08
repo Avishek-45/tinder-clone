@@ -9,8 +9,6 @@ class BrowseController < ApplicationController
         @users =Account.where.not(id: linked_account_ids)
         @matches = current_account.matches
         
-
-
     end
 
     def approve
