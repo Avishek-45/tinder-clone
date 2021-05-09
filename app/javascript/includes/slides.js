@@ -5,14 +5,16 @@ $(function(){
     $(".match-tile").on("click",function(){
         var account_id = $(this).data("id");
 
-       
+        $.ajax({
+            url: "/get/conversation/"+account_id,
+            method: "post",
+            dataType: "script"
+        })
 
-        $("#conversation").show();
+        // $("#conversation").show();
     })
 
-    $(".close-conversation").on("click",function(){
-        $("#conversation").hide();
-    })
+    
 
     $("#decline").on("click",function(){
         getToSlide('decline');
