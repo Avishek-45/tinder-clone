@@ -11,7 +11,6 @@ $(function(){
             dataType: "script"
         })
 
-        // $("#conversation").show();
     })
 
     

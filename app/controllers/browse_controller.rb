@@ -30,13 +30,16 @@ class BrowseController < ApplicationController
         #user swipes left
     end
 
-    def conversation
+    def open_conversation
         id = params[:id]
         @profile = Account.find(id)
         likes = Like.where(account_id: current_account.id, linked_account_id: id)
         @match = likes.first if likes.size > 0
 
-        print(@profile)
+        conversation = Conversation.between(id,current_account.id)
+
+        @conversation = conversation.size > 0 ? conversation.first : Conversation.new
+        @message = @conversation.messages.build
 
         if @profile.present?
 
