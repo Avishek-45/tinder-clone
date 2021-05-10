@@ -6,6 +6,26 @@
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div><br>
+
+  <div class="field">
+  <%= f.label :username %><br />
+  <%= f.text_field :username %><br><br>
+  </div>
+
+  <div class="field">
+  <%= f.label :first_name %><br />
+  <%= f.text_field :first_name  %><br><br>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %><br><br>
+  </div>
+
+  <div class="input-group">
+      <%= f.label :images %>
+      <%= f.file_field :images, multiple: true %><br><br>
   </div>
 
   <div class="field">

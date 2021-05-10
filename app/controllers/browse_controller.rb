@@ -38,6 +38,7 @@ class BrowseController < ApplicationController
 
         conversation = Conversation.between(id,current_account.id)
 
+
         @conversation = conversation.size > 0 ? conversation.first : Conversation.new
         @message = @conversation.messages.build
 
