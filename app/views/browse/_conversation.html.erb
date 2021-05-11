@@ -1,6 +1,6 @@
     <div class="">
         <div class="col-12 top-bar">
-            <i class=" fa fa-times fa-2x text-muted float-right " id="close-conversation"></i>
+            <button class="controls rounded-circle btn-danger text-light float-right" id="close-conversation">X</button>
             <% if @profile.images.attached? %>
             <%= link_to image_tag( @profile.images.first, width: "50px", height: "50px", class: "float-left profile-thumb rounded-circle mr-2") %>
             <% end %>
