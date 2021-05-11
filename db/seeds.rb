@@ -9,7 +9,7 @@
 require 'faker'
 
 
-10.times do
+20.times do
    account=Account.create(
       [
          first_name: Faker::Name.first_name ,
