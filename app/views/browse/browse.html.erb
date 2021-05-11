@@ -13,7 +13,7 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><%= render "browse/matches" %></div>
-                <div class="tab-pane fade ml-3" id="pills-message" role="tabpanel" aria-labelledby="pills-profile-tab"><p>No message to display</p></div>
+                <div class="tab-pane fade ml-3" id="pills-message" role="tabpanel" aria-labelledby="pills-profile-tab"><%= render partial: 'conversations/list'%></div>
             </div>
             
         </div>
@@ -35,7 +35,7 @@
             </ul>   
             <div id="slide-controls">
                 <span class="controls" id="decline"><i class="fa fa-times-circle fa-2x"></i></span>
-                <span class="controls" id="approve"><i class="fa fa-heart fa-2x"></i></span>
+                <span class="controls" id="approve"><i class="fas fa-heart fa-2x"></i></span>
             </div>
             <div id="conversation">
             </div>

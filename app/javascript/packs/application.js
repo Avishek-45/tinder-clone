@@ -8,8 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 require("jquery")
 require ("bootstrap")
-require("@fortawesome/fontawesome-free")
-
+import "@fortawesome/fontawesome-free/css/all"
 require ("includes/slides.js")
 
 

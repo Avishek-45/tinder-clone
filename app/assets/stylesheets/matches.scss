@@ -33,6 +33,19 @@
         margin-top: 30px;
     }
 
+    .conversation-message{
+        background: #f2f2f2;
+
+        p{
+            margin: 0;
+        }
+    }
+    .sent_by_me{
+        .conversation-message{
+            background: rgba(202, 32, 236, 0.2);
+        }
+    }
+
     #close-conversation{
         cursor: pointer;
 
