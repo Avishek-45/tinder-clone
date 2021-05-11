@@ -30,7 +30,7 @@ class Match < ApplicationRecord
         end
         
 
-        Account.includes(:images_attachments).where.not(id: ignore_ids).limit(10)
+        Account.includes(:images_attachments).where.not(id: ignore_ids).limit(20)
 
     end
 
