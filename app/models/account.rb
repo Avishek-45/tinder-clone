@@ -6,6 +6,9 @@ class Account < ApplicationRecord
 
   has_many_attached :images
 
+  validates :username, presence: true
+  validates :images, presence: true
+  validates :username, uniqueness: true, if: -> { self.username.present? }
  
 
   
