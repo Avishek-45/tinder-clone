@@ -12,16 +12,33 @@ $(function(){
         })
 
     })
+    $(".open-conversation").on("click",function(){
+        var account_id = $(this).data("id");
+
+        $.ajax({
+            url: "/get/conversation/"+account_id,
+            method: "post",
+            dataType: "script"
+        })
+
+    })
 
     
 
     $("#decline").on("click",function(){
+        var user_id = $activeSlide.data("id")
+
+        $.ajax({
+            url: "/decline/" + user_id,
+            method: "post",
+            datatype: "ajax"
+        })
         getToSlide('decline');
     })
 
     $("#approve").on("click",function(){
         var user_id = $activeSlide.data("id")
-        console.log(user_id)
+
         $.ajax({
             url: "/approve/" + user_id,
             method: "post",

@@ -16,6 +16,13 @@
     }
 }
 
+.open-conversation{
+    background: #efefef;
+    border-bottom: 1px solid #ddd;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
 #conversation{
     display: none;
     width: 96%;
@@ -30,7 +37,25 @@
     .top-bar{
         border-bottom: 1px solid #ddd;
         padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    .bottom-bar{
+        border-top: 1px solid #ddd;
+        padding-top: 40px;
         margin-top: 30px;
+    }
+
+    .conversation-message{
+        background: #f2f2f2;
+
+        p{
+            margin: 0;
+        }
+    }
+    .sent-by-me{
+        .conversation-message{
+            background: rgba(202, 32, 236, 0.2);
+        }
     }
 
     #close-conversation{
